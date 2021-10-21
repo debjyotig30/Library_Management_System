@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<style>
+    table, th, td {
+        border: 0.5px solid black;
+    }
+</style>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h3>@ViewBag.PageTitle</h3>
+
+    @{
+        var user = ViewData["User"] as Library_Management_System.Models.User;
+    }
+
+<table>
+    <tr>
+        <td>
+            User Id
+        </td>
+        <td>
+            @user.UserId
+        </td>
+    </tr>
+    <tr>
+        <td>
+            User Name
+        </td>
+        <td>
+            @user.UserName
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Role
+        </td>
+        <td>
+            @user.Role
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Department
+        </td>
+        <td>
+            @user.Department
+        </td>
+    </tr>
+    <tr>
+        <td>
+            EmailId
+        </td>
+        <td>
+            @user.EmailId
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

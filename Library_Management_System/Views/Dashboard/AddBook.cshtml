@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<style>
+    table, th, td {
+        border: 0.5px solid black;
+    }
+</style>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h3>@ViewBag.PageTitle</h3>
+
+    @{
+        var book = ViewData["NewBook"] as Library_Management_System.Models.Book;
+    }
+
+    <table>
+        <tr>
+            <td>
+                Book Id
+            </td>
+            <td>
+                @book.BookId
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Book Name
+            </td>
+            <td>
+                @book.BookName
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Author
+            </td>
+            <td>
+                @book.Author
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
